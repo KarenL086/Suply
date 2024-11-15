@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "titulo": "cepillo de dientes de bambú",
             "emprendedor":"Mar",
             "img_emprendedor": "./multimedia/cepillo.jpg",
-            "imagen": "./multimedia/cat-limpieza.jpg",
+            "imagen": "./multimedia/cepillo.jpg",
             "categoria": {
                 "nombre": "higiene",
                 "id": "higiene"
