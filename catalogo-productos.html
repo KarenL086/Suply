@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- FontAwesome for icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <title>Suply</title>
+  </head>
+<body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #e9e8e4;">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-5" href="index.html">Suply</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="catalogo-productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="emprendedores.html">Emprendedores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="suscripcion.html">Suscribirse</a>
+            </li>
+          </ul>
+          <!--<form class="d-flex m-1" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+          </form>-->
+          <div>
+              <div class="empre">
+                  <div class="img-emprendedor2">
+                      <img src="./multimedia/luna.jpg" alt="">
+                  </div>
+                  <span>Nombre usuario</span>
+              </div>
+          </div>
+          <div class="car m-2">
+              <a href="carrito.html"><i class="bi bi-cart2"></i></a>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+
+    <!--Productos-->
+<h1 class="mx-4">Productos</h1>
+<div class="row p-2"> 
+    <div class="col-md-9"> 
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 contenedor-productos" id="contenedor-productos"> 
+            <!-- Esto se va a rellenar con JS --> 
+        </div> 
+    </div> 
+
+    <!--Menu lateral-->
+    <div class="col-md-2"> 
+      <div class="line"> 
+        <div class="container">
+          <ul class="categories"> 
+            <h5>Categorias</h5>
+            <li> <button type="button" class="btn boton-categoria active" id="todos" >Todos</button></li> 
+            <li><button type="button" class="btn boton-categoria" id="alimento"> Alimentos secos </button></li> 
+            <li><button type="button" class="btn boton-categoria" id="hogar"> Artículos para el hogar </button></li> 
+            <li><button type="button" class="btn boton-categoria" id="ropa"> Prendas de vestir </button></li> 
+            <li><button type="button" class="btn boton-categoria" id="accesorio"> Joyería </button></li> 
+            <li><button type="button" class="btn boton-categoria" id="higiene"> Productos de higiene personal </button></li> 
+            <li><button type="button" class="btn boton-categoria" id="artesania"> Artesanales </button></li> 
+            <!---->
+            <h5>Emprendedores destacados</h5>
+            <li> <button type="button" class="btn" id="t">Luz de Luna</button></li> 
+            <li><button type="button" class="btn" id="c">AM Beauty</button></li> 
+            <li><button type="button" class="btn" id="r">ChicVibe</button></li> 
+            <li><button type="button" class="btn" id="a">FoodExpress</button></li>
+            <li><button type="button" class="btn" id="a">SMan</button></li> 
+          </ul>
+        </div>  
+      </div>  
+    </div>
+</div>
+  <!--Chatbot-->
+  <div class="chat-icon" id="chat-icon">
+    <i class="fas fa-comments"></i>
+  </div>
+
+  <div class="chat-container" id="chat-container">
+    <h4 class="text-center">Chatbot</h4>
+    <div class="chat-box" id="chat-box">
+        <!-- Chat  -->
+    </div>
+    <div class="input-container">
+        <input type="text" id="user-input" class="form-control" placeholder="Escribe tu mensaje..." />
+        <button id="send-btn" class="btn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+  
+    <!--Footer-->
+    <footer>
+      <div class="row">
+          <div class="col-3">
+              <h3>Suply</h3>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+              <b>¿Trabajamos juntos?</b>
+              <p>Contactanos a través de nuestras redes sociales</p>
+          </div>
+          <div class="col my-4">
+            <i class="bi bi-facebook mx-1"></i>
+            <i class="bi bi-whatsapp mx-1"></i>
+            <i class="bi bi-instagram mx-1"></i>
+            <i class="bi bi-envelope mx-1"></i>
+          </div>
+              
+
+         
+      </div>
+
+  </footer>
+  <!--Script-->
+  <script src="./js/script.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+  </html>

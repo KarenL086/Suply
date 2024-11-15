@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    font-family: "Open Sans", serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Open Sans", serif;
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body a { 
+    text-decoration: none; 
+    color: inherit;
+}
+
+span{
+    color: #6a6d78;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.inicio {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.inicio h1{
+    font-size: 40px;
+}
+
+.background-image {
+    width: 100%;
+    /*height: 100%;*/
+    /*object-fit: cover; Mantiene la relación de aspecto */
+}
+
+.floating-text {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Espacio desde la izquierda */
+    transform: translateY(-50%); /* Centrar verticalmente */
+    color: white; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    font-size: 2em; /* Tamaño del texto */
+    z-index: 1; /* Asegura que el texto esté encima de la imagen */
+}
+
+.categoria .card{
+    position: relative;
+    overflow: hidden; 
+    border-radius: 10px; 
+    color: white; 
+    max-height: 100px;
+    
+}
+.categoria .card-img-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Ajusta la altura de la imagen como desees */
+    overflow: hidden;
+}
+  
+.categoria .card-img {
+    width: 100%; /* La imagen cubre todo el contenedor */
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen cubra completamente el contenedor sin distorsionarse */
+    opacity: 0.6; /* Ajusta la opacidad de la imagen para hacerla más oscura */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .categoria .card-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Da énfasis al texto */
+    z-index: 2; /* Asegura que el texto esté por encima de la imagen */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad (0.5) */
+    z-index: 1; /* Asegura que la capa quede encima de la imagen */
+  }
+
+.producto{
+    width: 250px;
+    border-radius: 10px;
+    background-color: #e9e8e4;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: start;
+}
+
+.producto img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.centro-t{
+    text-align: center;
+}
+.centro-t img{
+    width: 300px;
+    height: 400px;
+}
+
+
+.beneficios :where(.card2, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrusel.dragging .card2{
+    cursor: grab;
+    user-select: none;
+}
+
+.carrusel .card2{
+    height: 300px;
+    list-style: none;
+    background-color:rgba(245, 245, 245, 0.925);
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.beneficios .card2{
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    }
+
+.card2 .img{
+    background: #004aad;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+}
+
+.card2 .img img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.card2 h2{
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.card2 span{
+    color: #6a6d78;
+    font-size: 1.31rem;
+}
+
+
+
+.mv{
+    height: 250px;
+    color: black;
+    background-color: #202020;
+}
+.mv img{
+    width: 200px;
+    height: 200px;
+}
+.img-emprendedor{
+    background: #004aad;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%; 
+}
+
+.img-emprendedor img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.empre{
+    display: flex; 
+    align-items: center;
+}
+
+.img-emprendedor2{
+    background: #004aad;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center;
+}
+
+.img-emprendedor2 img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+}
+ 
+.empre span{
+    color: #6a6d78;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 5px;
+    text-decoration: none;
+}
+.menucategorias{
+    background-color: #004aad;
+    width: 100%;
+    color: #fffc;
+    padding: 10px;
+}
+/*.menu-icon { 
+    display: none; 
+} 
+@media (max-width: 768px) { 
+    .menu-icon { display: block; } .menu-list { display: none; } 
+}*/
+
+.car{
+    color: #202020;
+    font-size: 25px;
+    background-color: #326cb8;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: inherit;
+}
+.car a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.car a:hover {
+    color: inherit; 
+    text-decoration: none; 
+}
+.img_car{
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.planes{
+    align-content: center;
+}
+
+.plan{
+    border-radius: 20px;
+    box-shadow:  8px 6px 10px rgba(0, 0, 0, 0.3);
+    background-color: #202020; 
+    color: white;
+}
+
+@media (min-width: 576px) { 
+    .planes { max-width: 75%; } 
+} 
+@media (min-width: 768px) { 
+    .planes { max-width: 50%; } 
+}
+
+.ico-plan{
+    background-color:wheat;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #202020;
+    font-size: 30px;
+    padding: 3px;
+    border-color: #326cb8;
+}
+
+.beneficios{
+    align-content: center;
+    width: 100%;
+    padding: 1%;
+}
+
+.beneficios img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.lista{
+    text-align: left;
+}
+
+.carousel-inner { display: flex; align-items: center; } 
+.carousel-item img { 
+    height: 550px;
+     object-fit: cover; 
+     width: 100%; 
+    }
+
+.delivery{
+    width: 125px;
+    height: 90px;
+    border-radius: 5%;
+}
+
+.vm img{
+    width: 800px;
+}
+
+.vm .card{
+    background-color: #2e2d2d;
+    color: white;
+    text-align: justify;
+}
+
+.img-prod{
+    width: 90%;
+}
+.container { 
+    display: flex; 
+    text-align: left;
+ } 
+.line { 
+    width: 2px; 
+    height: 100%; 
+    background-color:#004aad; 
+    margin-right: 10px;
+} 
+.categories { 
+    list-style-type: none; 
+    padding: 0; 
+    text-align: left;
+} 
+
+.categories li {
+    margin: 5px 0; 
+    text-align: left;
+}
+.categories .btn{
+    text-align: start;
+}
+
+
+footer{
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+}
+
+/* Icono flotante en la esquina inferior derecha */
+.chat-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que el icono esté por encima de otros elementos */
+}
+.chat-container {
+    position: fixed;
+    bottom: 80px; /* Se posiciona encima del icono flotante */
+    right: 30px;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: none; /* El chatbot está oculto por defecto */
+    width: 100%;
+    max-height: 500px;
+    height: 450px;
+    z-index: 999; /* Asegura que el chatbot esté por encima de otros elementos */
+}
+.chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: small;
+}
+.message i{
+    font-size: medium;
+}
+.message .content {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+.message.user .content {
+    background-color: #326cb8;
+    color: white;
+    align-items: flex-end; 
+}
+.message.bot .content {
+    background-color: #28a745;
+    color: white;
+    align-items: flex-start; 
+}
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-container input {
+    width: 85%;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: small;
+}
+.input-container button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.input-container button:hover {
+    background-color: #0056b3;
+}
